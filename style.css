@@ -123,3 +123,40 @@ header {
   background-color: white;
   color: black;
 }
+/* for second page*/
+
+.mars{
+    height: 100vh;
+    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/home_mars2026_d_59b1a6ea7a.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    padding: 80px 40px;
+  color: #ffffff;
+
+}
+.mars-content{
+    color: white;
+    z-index: 2;
+    max-width: 500px;
+}
+.mars-content h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+.mars-content a{
+    font-size:14px ;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.mars-content a:hover{
+    color: black;
+    background: white;
+}
