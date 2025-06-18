@@ -184,9 +184,7 @@ header {
 .rocket-content p{
     font-size: 16px;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    
-
+    font-family: Arial, Helvetica, sans-serif;   
 }
 .rocket-content h2{
     font-size: 48px;
@@ -218,15 +216,18 @@ header {
 .starlink{
    height: 100vh;
    display: flex;
-   background: url(	style.css) 
-
+   background: url("starlink image.jpg") ;
    justify-content: flex-start;
    align-items: flex-end;
+      background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
   position: relative;
    padding: 40px 80px;
 }
 .starlink-content{
     color: white;
+    z-index: 2;
 }
 .starlink-content p{
     font-size: 14px;
@@ -254,6 +255,50 @@ header {
     cursor: pointer;
 }
 .starlink-content a:hover{
+    background-color: white;
+    color: black;
+}
+/* Fifth slide -------------------------------------------------------------------------------*/
+.launch{
+    height: 100vh;
+   display: flex;
+   background:url(https://sxcontent9668.azureedge.us/cms-assets/assets/home_mars2026_d_59b1a6ea7a.jpg);
+
+   justify-content: flex-start;
+   align-items: flex-end;
+  position: relative;
+   padding: 40px 80px;
+}
+.launch-content{
+    color: white;
+    z-index: 2;
+}
+.launch-content p{
+     font-size: 16px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.launch-content h2{
+        color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+.launch-content a{
+        color: white;
+    background-color: transparent;
+    font-size: 14px;
+    width: 130px;
+    line-height: 50px;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+.launch-content a:hover{
     background-color: white;
     color: black;
 }
