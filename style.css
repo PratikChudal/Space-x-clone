@@ -24,7 +24,7 @@ header {
 }
 .navbar{
     display: flex;
-   ; 
+    
 }
 .navbar li a {
     color: #ffffff;
@@ -40,4 +40,13 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
+}
+/* Front-Page*/
+.front-page{
+    height: 100vh;
+    background: url('Front-Page image.jpg' ) no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 40px;
+    position: relative;
 }
