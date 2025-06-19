@@ -40,8 +40,7 @@ header {
 
 .navbar li a {
     color: #ffffff;
-    text-decoration: none;
-    gap: 20px;
+    text-decoration: none; 
     font-size:12px ;
     font-family: 'Orbitron',sans-serif;  
     text-decoration-style: solid;
@@ -51,13 +50,12 @@ header {
 
 .navbar li a:hover{
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .shop a{
     font-size: 14px;
-    margin-left: 60px;
-    display: flex;
-    align-items: center;   
+    margin-left: 60px;   
 }
 
 .menu-icon{
@@ -80,46 +78,46 @@ header {
 .front-page{
     height: 100vh;
     background: url('Front-Page image.jpg' ) no-repeat center center/cover;
-    display: flex;
-    align-items: flex-end;
-    padding: 80px 40px;
     position: relative;
 }
 .front-page-content{
-    position: relative;
+    position: absolute;
+   bottom: 80px;
+   left: 40px;
+   z-index: 2;
 }
 .front-page-content p{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
      font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
-.content h2{
+.front-page-content h2{
     font-size: 50px;
-    margin: 0px 39px 0px 0px;
-    font-weight: 800;
+   margin-bottom: 20px;
+    font-weight: 600;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif
 }
-.front-page .content a{
-  display: inline-block;
-  padding: 12px 28px;
+.front-page-content a{
+  
+  padding: 15px 40px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2.5px solid white;
   color: white;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-top: 20px;
+  display: inline-block;
   font-family: Arial, Helvetica, sans-serif
   
  
 }
 
-.front-page .content a:hover {
+.front-page-content a:hover {
   background-color: white;
   color: black;
 }
@@ -144,7 +142,8 @@ header {
 }
 .mars-content h2{
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
+    
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
 }
@@ -152,8 +151,9 @@ header {
     font-size:14px ;
     color: white;
     text-decoration: none;
-    border: 1px solid white;
-    padding: 10px 30px;
+    border: 2px solid white;
+    
+    padding: 15px 25px;
     font-weight: bold;
     transition: background 0.3s;
 }
@@ -221,23 +221,30 @@ header {
    align-items: flex-end;
      background-repeat: no-repeat;
    background-position: center center;
-   background-size: contain;
+   background-size: cover;
   position: relative;
-   padding: 40px 80px;
+   padding: 100px 30px;
 }
 .starlink-content{
     color: white;
     z-index: 2;
+    max-width: 500px;
 }
 .starlink-content p{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 .starlink-content h2{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.1;
 }
 .starlink-content a{
         color: white;
@@ -247,7 +254,7 @@ header {
     line-height: 50px;
     border: 1px solid white;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -265,7 +272,7 @@ header {
    background:url("slide5 image.jpg");
  background-repeat: no-repeat;
    background-position: center center;
-   background-size: contain;
+   background-size: cover;
    justify-content: flex-start;
    align-items: flex-end;
   position: relative;
@@ -324,14 +331,15 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 44px;
     
-    margin-bottom: 20px;
+    margin-bottom: 40px;
  }
  .lastslide-content a{
-        font-size:14px ;
+     font-size:14px ;
     color: white;
     text-decoration: none;
-    border: 1px solid white;
-    padding: 10px 30px;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 15px 25px;
     font-weight: bold;
     transition: background 0.3s;
 
