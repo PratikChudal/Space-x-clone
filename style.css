@@ -219,7 +219,7 @@ header {
    background: url("starlink image.jpg") ;
    justify-content: flex-start;
    align-items: flex-end;
-      background-repeat: no-repeat;
+     background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
   position: relative;
@@ -262,8 +262,10 @@ header {
 .launch{
     height: 100vh;
    display: flex;
-   background:url(https://sxcontent9668.azureedge.us/cms-assets/assets/home_mars2026_d_59b1a6ea7a.jpg);
-
+   background:url("slide5 image.jpg");
+ background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
    justify-content: flex-start;
    align-items: flex-end;
   position: relative;
@@ -302,3 +304,68 @@ header {
     background-color: white;
     color: black;
 }
+ /* Sixth slide -------------------------------------------------------------------------------*/
+ .lastslide{
+  height: 100vh;
+  background: url("6slideimage.jpg") no-repeat center center;
+  background-size: cover; /* or contain if you want full image */
+  position: relative;
+    
+ }
+ .lastslide-content{
+     position: absolute;
+     bottom: 150px;      
+     left: 40px;        
+     color: white;
+     z-index: 2;
+ }
+ .lastslide-content h2{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    
+    margin-bottom: 20px;
+ }
+ .lastslide-content a{
+        font-size:14px ;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+
+ }
+ .lastslide-content a:hover{
+    background-color: white;
+    color: black;
+
+ }
+ /* footer-------------------------------------------------------------------------------*/
+ .footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-content a:hover {
+  color: #ccc;
+}
+
