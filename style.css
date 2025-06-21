@@ -92,13 +92,19 @@ header {
     letter-spacing: 1.5px;
      font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+      animation: fadeInUp 1s ease forwards;
+   animation-delay: 0.3s;
+    opacity: 0;
 }
 .front-page-content h2{
     font-size: 50px;
    margin-bottom: 20px;
     font-weight: 600;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+      animation: fadeInUp 1s ease forwards;
+   animation-delay: 0.6s;
+    opacity: 0;
 }
 .front-page-content a{
   
@@ -112,8 +118,10 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif
-  
+  font-family: Arial, Helvetica, sans-serif;
+    animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
  
 }
 
@@ -131,7 +139,7 @@ header {
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
-    padding: 80px 40px;
+    padding: 120px 40px;
   color: #ffffff;
 
 }
@@ -142,20 +150,24 @@ header {
 }
 .mars-content h2{
     font-size: 40px;
-    margin-bottom: 90px;
-    
+    margin-bottom: 45px;  
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
+      animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 .mars-content a{
     font-size:14px ;
     color: white;
     text-decoration: none;
-    border: 2px solid white;
-    
+    border: 2px solid white;   
     padding: 15px 25px;
     font-weight: bold;
     transition: background 0.3s;
+    animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
 }
 .mars-content a:hover{
     color: black;
@@ -184,12 +196,18 @@ header {
 .rocket-content p{
     font-size: 16px;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;  
+    animation: fadeInUp 1s ease forwards;
+   animation-delay: 0.3s;
+   opacity: 0; 
 }
 .rocket-content h2{
     font-size: 48px;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    animation: fadeInUp 1s ease forwards;
+   animation-delay: 0.6s;
+   opacity: 0;
 }
 .rocket-content a{
     color: white;
@@ -206,6 +224,9 @@ header {
     text-align: center;
     font-weight: 400;
     cursor: pointer;
+    animation: fadeInUp 1s ease forwards;
+   animation-delay: 0.9s;
+   opacity: 0;
 }
 .rocket-content a:hover{
     background-color: white;
@@ -237,6 +258,9 @@ header {
     margin-bottom: 8px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+      animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+     opacity: 0
 }
 .starlink-content h2{
     color: white;
@@ -245,6 +269,9 @@ header {
     font-weight: 600;
     margin-bottom: 20px;
     line-height: 1.1;
+      animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
 }
 .starlink-content a{
         color: white;
@@ -260,6 +287,9 @@ header {
     text-align: center;
     font-weight: 400;
     cursor: pointer;
+      animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
 }
 .starlink-content a:hover{
     background-color: white;
@@ -286,11 +316,17 @@ header {
      font-size: 16px;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+      animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 .launch-content h2{
         color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
+      animation: fadeInUp 1s ease forwards;
+     animation-delay: 0.6s;
+     opacity: 0;
 }
 .launch-content a{
         color: white;
@@ -306,6 +342,9 @@ header {
     text-align: center;
     font-weight: 400;
     cursor: pointer;
+      animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.9s;
+    opacity: 0;
 }
 .launch-content a:hover{
     background-color: white;
@@ -331,14 +370,14 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 44px;
     
-    margin-bottom: 40px;
+    margin-bottom: 45px;
  }
  .lastslide-content a{
      font-size:14px ;
     color: white;
     text-decoration: none;
     border: 2px solid white;
-    margin-top: 20px;
+   
     padding: 15px 25px;
     font-weight: bold;
     transition: background 0.3s;
@@ -376,4 +415,31 @@ header {
 .footer-content a:hover {
   color: #ccc;
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
 
