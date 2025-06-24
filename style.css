@@ -63,6 +63,8 @@ header {
   flex-direction: column;
   cursor: pointer;
   gap: 2px;
+  align-self: flex-end;
+  margin-bottom: 8px;
 }
 
 .menu-icon span {
@@ -87,6 +89,28 @@ header {
   left: 40px;
   z-index: 2;
 }
+.front-page-content a {
+  padding: 12px 36px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+  transition: background 0.3s, color 0.3s;
+}
+.front-page-content a:hover {
+  background-color: white;
+  color: black;
+}
+
 
 /* Mars Section */
 .mars {
