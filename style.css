@@ -1,395 +1,177 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body,html{
-    background-color: black;
-    color: white;
-    height:100%;
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+  background-color: black;
+  color: white;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
-.logo{
-    flex: 1;
+.logo {
+  flex: 1;
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
+.navbar {
+  display: flex;
+  justify-content: center;
 }
 
-.navbar ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin-top: 10px;
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 .navbar li a {
-    color: #ffffff;
-    text-decoration: none; 
-    font-size:12px ;
-    font-family: 'Orbitron',sans-serif;  
-    text-decoration-style: solid;
-    cursor: pointer;
-   font-weight: 700;
-}
-
-.navbar li a:hover{
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
-.shop a{
-    font-size: 14px;
-    margin-left: 60px;   
-}
-
-.menu-icon{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 2px;
-}
-.menu-icon span{
-    background-color: white;
-    height: 2px;
-    width: 14px;
-    display: block;
-    border-radius: 2px;
-    margin-left: 20px;
-   
-}
-
-/* Front-Page*/
-.front-page{
-    height: 100vh;
-    background: url('Front-Page image.jpg' ) no-repeat center center/cover;
-    position: relative;
-}
-.front-page-content{
-    position: absolute;
-   bottom: 80px;
-   left: 40px;
-   z-index: 2;
-}
-.front-page-content p{
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-      animation: fadeInUp 1s ease forwards;
-   animation-delay: 0.3s;
-    opacity: 0;
-}
-.front-page-content h2{
-    font-size: 50px;
-   margin-bottom: 20px;
-    font-weight: 600;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-      animation: fadeInUp 1s ease forwards;
-   animation-delay: 0.6s;
-    opacity: 0;
-}
-.front-page-content a{
-  
-  padding: 15px 40px;
-  background-color: transparent;
-  border: 2.5px solid white;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-    animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.9s;
-  opacity: 0;
- 
-}
-
-.front-page-content a:hover {
-  background-color: white;
-  color: black;
-}
-/* for second page ---------------------------------------------------------------------------------------*/
-
-
-.mars{
-    height: 100vh;
-    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/home_mars2026_d_59b1a6ea7a.jpg) no-repeat center center/cover;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: relative;
-    padding: 120px 40px;
   color: #ffffff;
-
-}
-.mars-content{
-    color: white;
-    z-index: 2;
-    max-width: 500px;
-}
-.mars-content h2{
-    font-size: 40px;
-    margin-bottom: 45px;  
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.2;
-      animation: fadeInUp 1s ease forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-}
-.mars-content a{
-    font-size:14px ;
-    color: white;
-    text-decoration: none;
-    border: 2px solid white;   
-    padding: 15px 25px;
-    font-weight: bold;
-    transition: background 0.3s;
-    animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.6s;
-  opacity: 0;
-}
-.mars-content a:hover{
-    color: black;
-    background: white;
-}
-/* Third slide -------------------------------------------------------------------------------------------*/
-
-
-.rocket{
-    height: 100vh;
-    display: flex;
-    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_9_Website_Desktop_4_f1db4d08ec.jpg) no-repeat center center/cover;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: relative;
-    padding: 80px 40px ;
-    color: white;
-
-}
-.rocket-content{
-    color: white;
-    z-index: 2;
-    max-width: 500px;
-
-}
-.rocket-content p{
-    font-size: 16px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;  
-    animation: fadeInUp 1s ease forwards;
-   animation-delay: 0.3s;
-   opacity: 0; 
-}
-.rocket-content h2{
-    font-size: 48px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    animation: fadeInUp 1s ease forwards;
-   animation-delay: 0.6s;
-   opacity: 0;
-}
-.rocket-content a{
-    color: white;
-   /* padding: 12px 40px;*/
-    background-color: transparent;
-    font-size: 14px;
-    width: 130px;
-    line-height: 50px;
-    border: 1px solid white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    cursor: pointer;
-    animation: fadeInUp 1s ease forwards;
-   animation-delay: 0.9s;
-   opacity: 0;
-}
-.rocket-content a:hover{
-    background-color: white;
-    color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-/* Fourth slide -------------------------------------------------------------------------------*/
-.starlink{
-   height: 100vh;
-   display: flex;
-   background: url("starlink image.jpg") ;
-   justify-content: flex-start;
-   align-items: flex-end;
-     background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-  position: relative;
-   padding: 100px 30px;
+.navbar li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-.starlink-content{
-    color: white;
-    z-index: 2;
-    max-width: 500px;
+
+.shop a {
+  font-size: 14px;
+  margin-left: 60px;
 }
-.starlink-content p{
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-      animation: fadeInUp 1s ease forwards;
-    animation-delay: 0.3s;
-     opacity: 0
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 2px;
 }
-.starlink-content h2{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 1.1;
-      animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.6s;
-  opacity: 0;
+
+.menu-icon span {
+  background-color: white;
+  height: 2px;
+  width: 14px;
+  display: block;
+  border-radius: 2px;
+  margin-left: 20px;
 }
-.starlink-content a{
-        color: white;
-    background-color: transparent;
-    font-size: 14px;
-    width: 130px;
-    line-height: 50px;
-    border: 1px solid white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    cursor: pointer;
-      animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.9s;
-  opacity: 0;
-}
-.starlink-content a:hover{
-    background-color: white;
-    color: black;
-}
-/* Fifth slide -------------------------------------------------------------------------------*/
-.launch{
-    height: 100vh;
-   display: flex;
-   background:url("slide5 image.jpg");
- background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   justify-content: flex-start;
-   align-items: flex-end;
-  position: relative;
-   padding: 40px 80px;
-}
-.launch-content{
-    color: white;
-    z-index: 2;
-}
-.launch-content p{
-     font-size: 16px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-      animation: fadeInUp 1s ease forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-}
-.launch-content h2{
-        color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
-      animation: fadeInUp 1s ease forwards;
-     animation-delay: 0.6s;
-     opacity: 0;
-}
-.launch-content a{
-        color: white;
-    background-color: transparent;
-    font-size: 14px;
-    width: 130px;
-    line-height: 50px;
-    border: 1px solid white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    cursor: pointer;
-      animation: fadeInUp 1s ease forwards;
-    animation-delay: 0.9s;
-    opacity: 0;
-}
-.launch-content a:hover{
-    background-color: white;
-    color: black;
-}
- /* Sixth slide -------------------------------------------------------------------------------*/
- .lastslide{
+
+/* Front Page */
+.front-page {
   height: 100vh;
-  background: url("6slideimage.jpg") no-repeat center center;
-  background-size: cover; /* or contain if you want full image */
+  background: url('Front-Page image.jpg') no-repeat center center/cover;
   position: relative;
-    
- }
- .lastslide-content{
-     position: absolute;
-     bottom: 150px;      
-     left: 40px;        
-     color: white;
-     z-index: 2;
- }
- .lastslide-content h2{
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 44px;
-    
-    margin-bottom: 45px;
- }
- .lastslide-content a{
-     font-size:14px ;
-    color: white;
-    text-decoration: none;
-    border: 2px solid white;
-   
-    padding: 15px 25px;
-    font-weight: bold;
-    transition: background 0.3s;
+}
 
- }
- .lastslide-content a:hover{
-    background-color: white;
-    color: black;
+.front-page-content {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  z-index: 2;
+}
 
- }
- /* footer-------------------------------------------------------------------------------*/
- .footer {
+/* Mars Section */
+.mars {
+  height: 100vh;
+  background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/home_mars2026_d_59b1a6ea7a.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 120px 40px;
+  position: relative;
+}
+
+.mars-content {
+  color: white;
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* Rocket Section */
+.rocket {
+  height: 100vh;
+  background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_9_Website_Desktop_4_f1db4d08ec.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 80px 40px;
+  position: relative;
+}
+
+.rocket-content {
+  color: white;
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* Starlink Section */
+.starlink {
+  height: 100vh;
+  background: url("starlink image.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 100px 30px;
+  position: relative;
+}
+
+.starlink-content {
+  color: white;
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* Launch Section */
+.launch {
+  height: 100vh;
+  background: url("slide5 image.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 40px 80px;
+  position: relative;
+}
+
+.launch-content {
+  color: white;
+  z-index: 2;
+}
+
+/* Last Slide */
+.lastslide {
+  height: 100vh;
+  background: url("6slideimage.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.lastslide-content {
+  position: absolute;
+  bottom: 150px;
+  left: 40px;
+  color: white;
+  z-index: 2;
+}
+
+/* Footer */
+.footer {
   background-color: black;
   color: white;
   text-align: center;
@@ -403,7 +185,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .footer-content a {
@@ -416,6 +198,58 @@ header {
   color: #ccc;
 }
 
+/* Typography & Buttons - Shared */
+.front-page-content p,
+.rocket-content p,
+.starlink-content p,
+.launch-content p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.front-page-content h2,
+.mars-content h2,
+.rocket-content h2,
+.starlink-content h2,
+.launch-content h2,
+.lastslide-content h2 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.front-page-content a,
+.mars-content a,
+.rocket-content a,
+.starlink-content a,
+.launch-content a,
+.lastslide-content a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 15px 25px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: transparent;
+  transition: background 0.3s, color 0.3s;
+}
+
+.front-page-content a:hover,
+.mars-content a:hover,
+.rocket-content a:hover,
+.starlink-content a:hover,
+.launch-content a:hover,
+.lastslide-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Scroll Animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -427,9 +261,14 @@ header {
   }
 }
 
-.fade-in-up {
+.animate-on-scroll {
   opacity: 0;
-  animation: fadeInUp 1s ease-out forwards;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-on-scroll.visible {
+  animation: fadeInUp 1s ease forwards;
 }
 
 .delay-1 {
@@ -441,5 +280,6 @@ header {
 .delay-3 {
   animation-delay: 0.9s;
 }
+
 
 
